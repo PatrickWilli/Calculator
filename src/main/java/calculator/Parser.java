@@ -14,7 +14,7 @@ public class Parser
 	      } 
 	      catch (final NumberFormatException nfe) 
 	      {
-	    	  System.err.println("Please enter a Digit!");
+	    	  System.err.println("Please enter digits only!");
 	          return 0.0;
 	      }
 	}
