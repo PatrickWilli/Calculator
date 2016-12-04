@@ -28,12 +28,30 @@ public class Userinput
 			{
 				case "+":
 					Add add = new Add(n1, n2);
-					System.out.println("\n" + add.getfirstnumber() + " + " + add.getsecondnumber() + " = " + add.calculate());
+					System.out.println("\n" + add.getcalculation());
+					printsomelines();
+					break;
+				
+				case "-": 
+					Substract sub = new Substract(n1, n2);
+					System.out.println("\n" + sub.getcalculation());
+					printsomelines();
+					break;
+				
+				case "/":
+					Divide div = new Divide(n1, n2);
+					System.out.println("\n" + div.getcalculation());
+					printsomelines();
+					break;
+					
+				case "*":
+					Multiply mul = new Multiply(n1, n2);
+					System.out.println("\n" + mul.getcalculation());
 					printsomelines();
 					break;
 				
 				default:
-					System.out.println(operator + "is not supportet");
+					System.out.println(operator + " is not supportet");
 					break;
 				
 			}

@@ -14,7 +14,8 @@ public class Parser
 	      } 
 	      catch (final NumberFormatException nfe) 
 	      {
-	          return 0;
+	    	  System.err.println("Please enter a Digit!");
+	          return 0.0;
 	      }
 	}
 }

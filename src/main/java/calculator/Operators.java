@@ -3,7 +3,10 @@ package calculator;
 public enum Operators
 {
 	ADD("+"),
-	SUBSTRACT("-");
+	SUBSTRACT("-"),
+	DIVIDE("/"),
+	MULTIPLY("*");
+	
 	
 	private String operator;
 	Operators(String operator)
